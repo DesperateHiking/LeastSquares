@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeastSquares
 {
@@ -113,6 +109,7 @@ namespace LeastSquares
             for (var i = 0; i< solution.Length; i++)
                 solution[i] = Math.Round(solution[i], 3);
 
+            Console.WriteLine("Полиномиальная аппроксимация");
             Console.WriteLine("y(x) = {0}*x^2 + {1}*x + {2}", solution[0], solution[1], solution[2]);
         }
 
@@ -133,6 +130,7 @@ namespace LeastSquares
                 { res[0], n, res[1] } };
             var solution = GaussMethod(inputMatrix);
 
+            Console.WriteLine("Линейная аппроксимация");
             Console.WriteLine("y(x) = {0}*x + {1}", solution[0], solution[1]);
         }
 
