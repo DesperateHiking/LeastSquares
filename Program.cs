@@ -136,8 +136,8 @@ namespace LeastSquares
 
         static void Main(string[] args)
         {
-            var xArr = new double[] { 1, 2, 3, 5 };
-            var yArr = new double[] { 4, 5, 6, 8 };
+            var xArr = new double[] { -2, 1, 2, 3 };
+            var yArr = new double[] { -13, 5, 11, 17 };
             Linear(xArr, yArr);
             Quad(xArr, yArr);
             Console.ReadLine();
